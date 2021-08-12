@@ -36,7 +36,7 @@ class ProfileTabs extends Component{
             <div>
                 <button onClick={this.onClickButton1} className="btn btn-raised btn-primary btn-rounded mr-5">{follower.length} Followers</button>
                 <button onClick={this.onClickButton2} className="btn btn-raised btn-primary btn-rounded">{following.length} Followings</button>
-                <Modal open={this.state.openModal1} onClose={this.onCloseModal1}>
+                <Modal open={this.state.openModal1} onClose={this.onCloseModal1} style={{width:"1000px"}}>
                     <h1 className="mt-4">User's Followers List</h1>
                     <hr />
                     {follower.map((person,i) => {
@@ -47,7 +47,7 @@ class ProfileTabs extends Component{
                                     <Link to={`/user/${person._id}`} onClick={this.setValue}>
                                         <img
                                             className = "float-left mr-2 mt-2"
-                                            height="50px"
+                                            height="100px"
                                             src={`${process.env.REACT_APP_API}/user/photo/${person._id}`}
                                             onError = {i=> (i.target.src = `${DefaultProfile}`)}
                                             alt={person.name} />
@@ -55,9 +55,7 @@ class ProfileTabs extends Component{
                                             <p className="lead text-dark font-weight-bold">{person.name}</p>
                                             </div>
                                     </Link>
-                                    
                                 </div>
-
                             </div>
                         </div>
                         );

@@ -88,7 +88,7 @@ class Posts extends Component{
                                                     className="fa fa-thumbs-up text-primary"
                                                     style={{ padding: "10px", borderRadius: "50%" }}
                                                     />{" "}
-                                                    {post.likes.length} Likes
+                                                    {post.likes.length}
                                                     </h3>
                                                     ) : (
                                                     <h3 className="d-flex align-items-center me-3">
@@ -96,7 +96,7 @@ class Posts extends Component{
                                                             className="fas fa-thumbs-up text-light"
                                                             style={{ padding: "10px", borderRadius: "100%", borderWidth:"10px", textShadow: "0 0 3px #000" }}
                                                         />{" "}
-                                                        {post.likes.length} Likes
+                                                        {post.likes.length}
                                                         </h3>
                                                     )}
                                         <h3 className="d-flex align-items-center me-3">
@@ -104,7 +104,7 @@ class Posts extends Component{
                                             style={{ padding: "10px", borderRadius: "50%" }}
                                             ></i>
                                             {" "}
-                                            {post.comments.length} Comments
+                                            {post.comments.length}
                                         </h3>
                                     </div>
                                     </Link>

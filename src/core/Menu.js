@@ -68,6 +68,11 @@ const Menu = ({history}) =>(
                     </>
                 )}
             </ul>
+            <div className="d-flex align-items-center">
+            <a href="https://anshulranjan.com" className="btn px-3 me-2 text-white">
+            By Anshul Ranjan
+            </a>
+            </div>
             </div>
         </div>
         </nav>
